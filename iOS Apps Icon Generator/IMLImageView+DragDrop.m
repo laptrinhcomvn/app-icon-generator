@@ -57,7 +57,7 @@ NSString *kPrivateDragUTI = @"com.imodlife.apps.icongenerator";
         [sender enumerateDraggingItemsWithOptions:NSDraggingItemEnumerationConcurrent
                                           forView:self
                                           classes:[NSArray arrayWithObject:[NSPasteboardItem class]]
-                                    searchOptions:nil
+                                    searchOptions:@{NSPasteboardURLReadingFileURLsOnlyKey:@YES}
                                        usingBlock:^(NSDraggingItem *draggingItem, NSInteger idx, BOOL *stop) {
                                            
                                            /* Only resize a fragging item if it originated from one of our windows.  To do this,
@@ -211,8 +211,10 @@ NSString *kPrivateDragUTI = @"com.imodlife.apps.icongenerator";
     representations = [[self image] representations];
     
     if ([[[representations objectAtIndex:0] className] isEqualToString:@"NSBitmapImageRep"]) {
+        NSDictionary *imageProps = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:1.0] forKey:NSImageCompressionFactor];
         bitmapData = [NSBitmapImageRep representationOfImageRepsInArray:representations
-                                                              usingType:NSPNGFileType properties:nil];
+                                                              usingType:NSPNGFileType
+                                                             properties:imageProps];
     } else {
         NSLog(@"%@", [[[[self image] representations] objectAtIndex:0] className]);
         

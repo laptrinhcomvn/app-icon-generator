@@ -20,6 +20,8 @@
 		A65AFA4B1B05F07E008EDF83 /* iOS_Apps_Icon_GeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A65AFA4A1B05F07E008EDF83 /* iOS_Apps_Icon_GeneratorTests.m */; };
 		A65AFA571B05FC3A008EDF83 /* droppanel.png in Resources */ = {isa = PBXBuildFile; fileRef = A65AFA561B05FC3A008EDF83 /* droppanel.png */; };
 		A65AFA5A1B060621008EDF83 /* IMLImageView+DragDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A65AFA591B060621008EDF83 /* IMLImageView+DragDrop.m */; };
+		A68D6AD11BC4FF10000E35E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D6AD01BC4FF10000E35E0 /* ApplicationServices.framework */; };
+		A68D6AD31BC50CEB000E35E0 /* AndroidIconSize.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6AD21BC50CEB000E35E0 /* AndroidIconSize.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 		A6321E701B09C1F5003247B1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		A65A3FB31B09F5A10062D80C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		A65A3FB51B09F6DD0062D80C /* IconSize.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IconSize.plist; sourceTree = "<group>"; };
-		A65AFA2E1B05F07E008EDF83 /* iOS Apps Icon Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Apps Icon Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65AFA2E1B05F07E008EDF83 /* Mobile Apps Icon Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Apps Icon Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65AFA321B05F07E008EDF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65AFA331B05F07E008EDF83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A65AFA341B05F07E008EDF83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,13 +51,15 @@
 		A65AFA381B05F07E008EDF83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A65AFA391B05F07E008EDF83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A65AFA3B1B05F07E008EDF83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A65AFA441B05F07E008EDF83 /* iOS Apps Icon GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Apps Icon GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65AFA441B05F07E008EDF83 /* Mobile Apps Icon GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Apps Icon GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65AFA491B05F07E008EDF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65AFA4A1B05F07E008EDF83 /* iOS_Apps_Icon_GeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Apps_Icon_GeneratorTests.m; sourceTree = "<group>"; };
 		A65AFA541B05F131008EDF83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A65AFA561B05FC3A008EDF83 /* droppanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = droppanel.png; path = Images/droppanel.png; sourceTree = "<group>"; };
 		A65AFA581B060621008EDF83 /* IMLImageView+DragDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMLImageView+DragDrop.h"; sourceTree = "<group>"; };
 		A65AFA591B060621008EDF83 /* IMLImageView+DragDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMLImageView+DragDrop.m"; sourceTree = "<group>"; };
+		A68D6AD01BC4FF10000E35E0 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		A68D6AD21BC50CEB000E35E0 /* AndroidIconSize.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AndroidIconSize.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68D6AD11BC4FF10000E35E0 /* ApplicationServices.framework in Frameworks */,
 				A6321E711B09C1F5003247B1 /* Quartz.framework in Frameworks */,
 				A6321E6F1B09C1CD003247B1 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -81,6 +86,7 @@
 		A65A3FB21B09F5A10062D80C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A68D6AD21BC50CEB000E35E0 /* AndroidIconSize.plist */,
 				A65A3FB31B09F5A10062D80C /* Contents.json */,
 				A65A3FB51B09F6DD0062D80C /* IconSize.plist */,
 			);
@@ -90,6 +96,7 @@
 		A65AFA251B05F07E008EDF83 = {
 			isa = PBXGroup;
 			children = (
+				A68D6AD01BC4FF10000E35E0 /* ApplicationServices.framework */,
 				A6321E701B09C1F5003247B1 /* Quartz.framework */,
 				A6321E6E1B09C1CD003247B1 /* CoreGraphics.framework */,
 				A6321E6C1B099D3B003247B1 /* AppKit.framework */,
@@ -103,8 +110,8 @@
 		A65AFA2F1B05F07E008EDF83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A65AFA2E1B05F07E008EDF83 /* iOS Apps Icon Generator.app */,
-				A65AFA441B05F07E008EDF83 /* iOS Apps Icon GeneratorTests.xctest */,
+				A65AFA2E1B05F07E008EDF83 /* Mobile Apps Icon Generator.app */,
+				A65AFA441B05F07E008EDF83 /* Mobile Apps Icon GeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A65AFA2D1B05F07E008EDF83 /* iOS Apps Icon Generator */ = {
+		A65AFA2D1B05F07E008EDF83 /* Mobile Apps Icon Generator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A65AFA4E1B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "iOS Apps Icon Generator" */;
+			buildConfigurationList = A65AFA4E1B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "Mobile Apps Icon Generator" */;
 			buildPhases = (
 				A65AFA2A1B05F07E008EDF83 /* Sources */,
 				A65AFA2B1B05F07E008EDF83 /* Frameworks */,
@@ -178,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Apps Icon Generator";
+			name = "Mobile Apps Icon Generator";
 			productName = "iOS Apps Icon Generator";
-			productReference = A65AFA2E1B05F07E008EDF83 /* iOS Apps Icon Generator.app */;
+			productReference = A65AFA2E1B05F07E008EDF83 /* Mobile Apps Icon Generator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A65AFA431B05F07E008EDF83 /* iOS Apps Icon GeneratorTests */ = {
+		A65AFA431B05F07E008EDF83 /* Mobile Apps Icon GeneratorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A65AFA511B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "iOS Apps Icon GeneratorTests" */;
+			buildConfigurationList = A65AFA511B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "Mobile Apps Icon GeneratorTests" */;
 			buildPhases = (
 				A65AFA401B05F07E008EDF83 /* Sources */,
 				A65AFA411B05F07E008EDF83 /* Frameworks */,
@@ -196,9 +203,9 @@
 			dependencies = (
 				A65AFA461B05F07E008EDF83 /* PBXTargetDependency */,
 			);
-			name = "iOS Apps Icon GeneratorTests";
+			name = "Mobile Apps Icon GeneratorTests";
 			productName = "iOS Apps Icon GeneratorTests";
-			productReference = A65AFA441B05F07E008EDF83 /* iOS Apps Icon GeneratorTests.xctest */;
+			productReference = A65AFA441B05F07E008EDF83 /* Mobile Apps Icon GeneratorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +214,7 @@
 		A65AFA261B05F07E008EDF83 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "© IML";
 				TargetAttributes = {
 					A65AFA2D1B05F07E008EDF83 = {
@@ -219,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A65AFA291B05F07E008EDF83 /* Build configuration list for PBXProject "iOS Apps Icon Generator" */;
+			buildConfigurationList = A65AFA291B05F07E008EDF83 /* Build configuration list for PBXProject "Mobile Apps Icon Generator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,8 +239,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A65AFA2D1B05F07E008EDF83 /* iOS Apps Icon Generator */,
-				A65AFA431B05F07E008EDF83 /* iOS Apps Icon GeneratorTests */,
+				A65AFA2D1B05F07E008EDF83 /* Mobile Apps Icon Generator */,
+				A65AFA431B05F07E008EDF83 /* Mobile Apps Icon GeneratorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +252,7 @@
 			files = (
 				A65AFA571B05FC3A008EDF83 /* droppanel.png in Resources */,
 				A65AFA3C1B05F07E008EDF83 /* Images.xcassets in Resources */,
+				A68D6AD31BC50CEB000E35E0 /* AndroidIconSize.plist in Resources */,
 				A65A3FB61B09F6DD0062D80C /* IconSize.plist in Resources */,
 				A65AFA3F1B05F07E008EDF83 /* Main.storyboard in Resources */,
 				A65A3FB41B09F5A10062D80C /* Contents.json in Resources */,
@@ -286,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		A65AFA461B05F07E008EDF83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A65AFA2D1B05F07E008EDF83 /* iOS Apps Icon Generator */;
+			target = A65AFA2D1B05F07E008EDF83 /* Mobile Apps Icon Generator */;
 			targetProxy = A65AFA451B05F07E008EDF83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -324,6 +332,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -339,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -376,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -389,7 +398,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "iOS Apps Icon Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imodlife.apps.icongenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -401,7 +411,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "iOS Apps Icon Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imodlife.apps.icongenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -421,8 +432,9 @@
 				);
 				INFOPLIST_FILE = "iOS Apps Icon GeneratorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Apps Icon Generator.app/Contents/MacOS/iOS Apps Icon Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imodlife.apps.icongenerator.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Mobile Apps Icon GeneratorTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Apps Icon Generator.app/Contents/MacOS/Mobile Apps Icon Generator";
 			};
 			name = Debug;
 		};
@@ -437,15 +449,16 @@
 				);
 				INFOPLIST_FILE = "iOS Apps Icon GeneratorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Apps Icon Generator.app/Contents/MacOS/iOS Apps Icon Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imodlife.apps.icongenerator.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Mobile Apps Icon GeneratorTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Apps Icon Generator.app/Contents/MacOS/Mobile Apps Icon Generator";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A65AFA291B05F07E008EDF83 /* Build configuration list for PBXProject "iOS Apps Icon Generator" */ = {
+		A65AFA291B05F07E008EDF83 /* Build configuration list for PBXProject "Mobile Apps Icon Generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A65AFA4C1B05F07E008EDF83 /* Debug */,
@@ -454,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A65AFA4E1B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "iOS Apps Icon Generator" */ = {
+		A65AFA4E1B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "Mobile Apps Icon Generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A65AFA4F1B05F07E008EDF83 /* Debug */,
@@ -463,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A65AFA511B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "iOS Apps Icon GeneratorTests" */ = {
+		A65AFA511B05F07E008EDF83 /* Build configuration list for PBXNativeTarget "Mobile Apps Icon GeneratorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A65AFA521B05F07E008EDF83 /* Debug */,

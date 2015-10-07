@@ -14,12 +14,18 @@
     NSString *outputPath;
     NSString *inputPath;
     
+    NSString *outputPathAndroid;
+    
     NSDictionary *iconNamedSizes;
 }
 
 @property (weak) IBOutlet NSTextField *lbOutputPath;
 
 @property (weak) IBOutlet IMLImageView_DragDrop *ivIcon;
+
+@property (weak) IBOutlet NSButton *isIOS;
+@property (weak) IBOutlet NSButton *isAndroid;
+
 
 - (IBAction)btnGenerateClicked:(id)sender;
 

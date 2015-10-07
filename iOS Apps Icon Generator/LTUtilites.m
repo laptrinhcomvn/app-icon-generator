@@ -33,8 +33,10 @@
                                              context:nil
                                                hints:nil];
     NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
-    [newRep setSize:[image size]];   // if you want the same resolution
-    NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
+    [newRep setSize:[image size]]; // if you want the same resolution
+    
+    NSDictionary *imageProps = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:1.0] forKey:NSImageCompressionFactor];
+    NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:imageProps];
     return [pngData writeToFile:path atomically:YES];
     
     //return [[[[image representations] objectAtIndex:0] representationUsingType:NSPNGFileType properties:nil] writeToFile:path atomically:YES];
