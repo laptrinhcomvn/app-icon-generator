@@ -6,6 +6,7 @@ Mac OS X app to generate multiple size for app icon. Support:
 - Newest Android Studio
 - Work on Mac OS X 10.9 or newer (also support El Capitan)
 
+Download Latest Version: https://github.com/laptrinhcomvn/ios-app-icon-generator/releases
 
 v2.0
 - Support Mac OS X 10.11 El Capitan
