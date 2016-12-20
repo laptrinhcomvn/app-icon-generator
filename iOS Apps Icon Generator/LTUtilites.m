@@ -14,12 +14,19 @@
 
 + (NSImage*)resizeImageWithPath:(NSString *)path toSize:(CGSize)size {
     NSImage *img = [[NSImage alloc] initWithContentsOfFile:path];
-    NSRect targetFrame = NSMakeRect(0, 0, size.width, size.height);
+
+    // Convert the target size to account for normal or retina screen
+    // http://stackoverflow.com/a/15885854/505093
+    CGFloat screenScale = [[NSScreen mainScreen] backingScaleFactor];
+    float targetScaledWidth = size.width / screenScale;
+    float targetScaledHeight = size.height / screenScale;
+
+    NSRect targetFrame = NSMakeRect(0, 0, targetScaledWidth, targetScaledHeight);
     
     NSImage* targetImage = nil;
     NSImageRep *sourceImageRep = [img bestRepresentationForRect:targetFrame context:nil hints:nil];
     
-    targetImage = [[NSImage alloc] initWithSize:size];
+    targetImage = [[NSImage alloc] initWithSize:NSMakeSize(targetScaledWidth, targetScaledHeight)];
     
     [targetImage lockFocus];
     [sourceImageRep drawInRect: targetFrame];
