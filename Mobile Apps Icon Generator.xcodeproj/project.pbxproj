@@ -21,7 +21,7 @@
 		A65AFA571B05FC3A008EDF83 /* droppanel.png in Resources */ = {isa = PBXBuildFile; fileRef = A65AFA561B05FC3A008EDF83 /* droppanel.png */; };
 		A65AFA5A1B060621008EDF83 /* IMLImageView+DragDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A65AFA591B060621008EDF83 /* IMLImageView+DragDrop.m */; };
 		A68D6AD11BC4FF10000E35E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D6AD01BC4FF10000E35E0 /* ApplicationServices.framework */; };
-		A68D6AD31BC50CEB000E35E0 /* AndroidIconSize.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6AD21BC50CEB000E35E0 /* AndroidIconSize.plist */; settings = {ASSET_TAGS = (); }; };
+		A68D6AD31BC50CEB000E35E0 /* AndroidIconSize.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6AD21BC50CEB000E35E0 /* AndroidIconSize.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,7 +214,7 @@
 		A65AFA261B05F07E008EDF83 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "© IML";
 				TargetAttributes = {
 					A65AFA2D1B05F07E008EDF83 = {
@@ -324,8 +324,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -368,8 +370,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";

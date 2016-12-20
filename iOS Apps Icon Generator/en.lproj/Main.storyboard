@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <deployment version="101000" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -172,7 +173,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="hGP-qc-Dv0"/>
                                 </constraints>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Output Location:" id="qnm-rg-dlL">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -184,25 +184,19 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="dTt-iy-cSi"/>
                                 </constraints>
-                                <animations/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="droppanel" id="aSh-Fi-n6N"/>
                             </imageView>
-                            <box horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-lN-KNB">
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-lN-KNB">
                                 <rect key="frame" x="282" y="20" width="4" height="484"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="Y1G-6z-mhZ"/>
                                 </constraints>
-                                <animations/>
-                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <font key="titleFont" metaFont="system"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI2-dO-81V">
                                 <rect key="frame" x="298" y="33" width="251" height="471"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="247" id="KNK-ZR-O54"/>
                                 </constraints>
-                                <animations/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="sjs-du-oGy">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">1- Drag your designed 1024x1024 (px) icon to the left.
@@ -224,9 +218,8 @@ mipmap-xxxhdpiic_launcher</string>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Es1-g1-1dt">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="Es1-g1-1dt">
                                 <rect key="frame" x="13" y="136" width="254" height="61"/>
-                                <animations/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="20s-sZ-jkp">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -238,7 +231,6 @@ mipmap-xxxhdpiic_launcher</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="TgI-PI-QfZ"/>
                                 </constraints>
-                                <animations/>
                                 <buttonCell key="cell" type="check" title="For Android" bezelStyle="regularSquare" imagePosition="left" inset="2" id="bYV-jL-MaH">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -249,7 +241,6 @@ mipmap-xxxhdpiic_launcher</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="cOs-rl-2en"/>
                                 </constraints>
-                                <animations/>
                                 <buttonCell key="cell" type="check" title="For iOS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2ja-aW-aal">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -260,7 +251,6 @@ mipmap-xxxhdpiic_launcher</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="xFQ-8x-qee"/>
                                 </constraints>
-                                <animations/>
                                 <buttonCell key="cell" type="square" title="Generate" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="37S-yC-kr5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="18" name="HelveticaNeue-Bold"/>
@@ -297,7 +287,6 @@ mipmap-xxxhdpiic_launcher</string>
                             <constraint firstItem="Es1-g1-1dt" firstAttribute="leading" secondItem="o2Y-jo-uUq" secondAttribute="leading" id="yjh-2l-7xf"/>
                             <constraint firstItem="8a1-lN-KNB" firstAttribute="leading" secondItem="ijz-9U-r6e" secondAttribute="trailing" constant="19" id="zL2-F0-p0N"/>
                         </constraints>
-                        <animations/>
                     </view>
                     <connections>
                         <outlet property="isAndroid" destination="36I-su-ero" id="ICn-WG-UB0"/>
