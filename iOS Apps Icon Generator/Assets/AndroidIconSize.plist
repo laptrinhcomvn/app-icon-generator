@@ -4,18 +4,20 @@
 <dict>
 	<key>drawable/ic_launcher</key>
 	<integer>36</integer>
-	<key>drawable-hdpi/ic_launcher</key>
-	<integer>72</integer>
 	<key>drawable-mdpi/ic_launcher</key>
 	<integer>48</integer>
+	<key>drawable-hdpi/ic_launcher</key>
+	<integer>72</integer>
 	<key>drawable-xhdpi/ic_launcher</key>
 	<integer>96</integer>
 	<key>drawable-xxhdpi/ic_launcher</key>
 	<integer>144</integer>
-	<key>mipmap-hdpi/ic_launcher</key>
-	<integer>72</integer>
+	<key>drawable-xxxhdpi/ic_launcher</key>
+	<integer>192</integer>
 	<key>mipmap-mdpi/ic_launcher</key>
 	<integer>48</integer>
+	<key>mipmap-hdpi/ic_launcher</key>
+	<integer>72</integer>
 	<key>mipmap-xhdpi/ic_launcher</key>
 	<integer>96</integer>
 	<key>mipmap-xxhdpi/ic_launcher</key>

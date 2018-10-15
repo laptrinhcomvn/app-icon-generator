@@ -26,6 +26,7 @@
 @property (weak) IBOutlet NSButton *isIOS;
 @property (weak) IBOutlet NSButton *isAndroid;
 
+@property (weak) IBOutlet NSTextField *lbMessage;
 
 - (IBAction)btnGenerateClicked:(id)sender;
 

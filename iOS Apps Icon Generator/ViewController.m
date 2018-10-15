@@ -9,12 +9,14 @@
 #import "ViewController.h"
 
 @implementation ViewController
-@synthesize ivIcon, lbOutputPath;
+@synthesize ivIcon, lbOutputPath, lbMessage;
 @synthesize isIOS, isAndroid;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     ivIcon.delegate = self;
+    
+    lbMessage.hidden = true;
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -28,9 +30,9 @@
     
     inputPath = filePath;
    
-    outputPathAndroid = [[filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"AndroidIcons/src"];
+    outputPathAndroid = [[filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"iml_generated_output/android/app/src/main/res"];
     
-    outputPath = [[[filePath stringByDeletingPathExtension] stringByAppendingString:@".xcassets"] stringByAppendingPathComponent:@"AppIcon.appiconset"];
+    outputPath = [[[[filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"iml_generated_output/ios"] stringByAppendingString:@".xcassets"] stringByAppendingPathComponent:@"AppIcon.appiconset"];
     
     lbOutputPath.stringValue = [filePath stringByDeletingLastPathComponent];
 }
@@ -67,11 +69,12 @@
                 
             }
             
-            NSRunAlertPanel(@"Success", @"Your Icon set was generated at: %@", nil, nil, nil, outputPath);
-            
+            //NSRunAlertPanel(@"Success", @"Your Icon set was generated at: %@", nil, nil, nil, outputPath);
+            [self showMessage:@"Success" forError:false];
         } else {
-            NSLog(@"Convert error: %@", error.description);
-            NSRunAlertPanel(@"Error", @"%@", nil, nil, nil, @"Convert failed, please try again.");
+            //NSLog(@"Convert error: %@", error.description);
+            //NSRunAlertPanel(@"Error", @"%@", nil, nil, nil, @"Convert failed, please try again.");
+            [self showMessage:@"Failed" forError:true];
         }
     }
     
@@ -101,16 +104,26 @@
                 
             }
             
-            NSRunAlertPanel(@"Success", @"Your Icon set was generated at: %@", nil, nil, nil, outputPath);
+            //NSRunAlertPanel(@"Success", @"Your Icon set was generated at: %@", nil, nil, nil, outputPath);
+            [self showMessage:@"Success" forError:false];
             
         } else {
-            NSLog(@"Convert error: %@", error.description);
-            NSRunAlertPanel(@"Error", @"%@", nil, nil, nil, @"Convert failed, please try again.");
+            //NSLog(@"Convert error: %@", error.description);
+            //NSRunAlertPanel(@"Error", @"%@", nil, nil, nil, @"Convert failed, please try again.");
+            [self showMessage:@"Failed" forError:true];
         }
     }
     
-    NSLog(@"End convert");
+    //NSLog(@"End convert");
 }
 
+
+- (void)showMessage:(NSString *)msg forError:(Boolean)isError {
+    lbMessage.textColor = (isError ? NSColor.redColor : NSColor.blueColor);
+    
+    lbMessage.stringValue = msg;
+    
+    lbMessage.hidden = false;
+}
 
 @end

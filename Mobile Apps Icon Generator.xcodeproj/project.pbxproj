@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					A65AFA2D1B05F07E008EDF83 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = LH225FX8ZS;
 					};
 					A65AFA431B05F07E008EDF83 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -399,7 +400,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH225FX8ZS;
 				INFOPLIST_FILE = "iOS Apps Icon Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -412,7 +415,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH225FX8ZS;
 				INFOPLIST_FILE = "iOS Apps Icon Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;

@@ -2,59 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Icon-Small</key>
-	<integer>29</integer>
-	<key>Icon-Small@2x</key>
-	<integer>58</integer>
-	<key>Icon-Small@3x</key>
-	<integer>87</integer>
+	<key>Icon-20</key>
+	<integer>20</integer>
+	<key>Icon-20@2x</key>
+	<integer>40</integer>
+	<key>Icon-20@3x</key>
+	<integer>60</integer>
 	<key>Icon-40</key>
-	<string>40</string>
+	<integer>40</integer>
 	<key>Icon-40@2x</key>
 	<integer>80</integer>
 	<key>Icon-40@3x</key>
 	<integer>120</integer>
-	<key>Icon</key>
-	<integer>57</integer>
-	<key>Icon@2x</key>
-	<integer>114</integer>
 	<key>Icon-60@2x</key>
 	<integer>120</integer>
 	<key>Icon-60@3x</key>
 	<integer>180</integer>
+	<key>Icon-76</key>
+	<integer>76</integer>
+	<key>Icon-76@2x</key>
+	<integer>152</integer>
 	<key>Icon-Small-29</key>
 	<integer>29</integer>
 	<key>Icon-Small-29@2x</key>
 	<integer>58</integer>
 	<key>Icon-Small-29@3x</key>
-	<string>87</string>
-	<key>iPadSpotlight-40</key>
-	<integer>40</integer>
-	<key>iPadSpotlight-40@2x</key>
-	<integer>80</integer>
-	<key>Icon-Small-50</key>
-	<integer>50</integer>
-	<key>Icon-Small-50@2x</key>
-	<integer>100</integer>
-	<key>Icon-72</key>
-	<integer>72</integer>
-	<key>Icon-72@2x</key>
-	<integer>144</integer>
-	<key>Icon-76</key>
-	<integer>76</integer>
-	<key>Icon-76@2x</key>
-	<integer>152</integer>
-	<key>Icon-20</key>
-	<string>20</string>
-	<key>Icon-20@2x</key>
-	<integer>40</integer>
-	<key>Icon-20@3x</key>
-	<string>60</string>
+	<integer>87</integer>
 	<key>Icon_835@2x</key>
-	<string>167</string>
-	<key>iTunesArtwork</key>
-	<string>512</string>
+	<integer>167</integer>
 	<key>iTunesArtwork@2x</key>
-	<string>1024</string>
+	<integer>1024</integer>
 </dict>
 </plist>
