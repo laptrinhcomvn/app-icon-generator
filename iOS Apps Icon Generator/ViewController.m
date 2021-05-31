@@ -156,8 +156,7 @@
     id jsonObject = [NSJSONSerialization JSONObjectWithData:originData options:NSJSONReadingAllowFragments error:&error];
     if ([jsonObject isKindOfClass:[NSDictionary class]] == NO) return;
     NSDictionary *dict = (NSDictionary *)jsonObject;
-    // read config size list
-    NSString *scorePath = [[NSBundle mainBundle] pathForResource:plistFileName ofType:nil];
+    // rewrite for reading from macOS_Contents.json
     iconNamedSizes = [dict objectForKey:@"images"];
     NSString *sizeA,*sizeB,*scale;
     NSString *sizeStr = nil;
