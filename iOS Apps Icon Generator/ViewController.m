@@ -10,7 +10,7 @@
 
 @implementation ViewController
 @synthesize ivIcon, lbOutputPath, lbMessage;
-@synthesize isIOS, isAndroid;
+@synthesize isIOS, isAndroid, isMacOS;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +34,8 @@
     
     outputPath = [[[[filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"iml_generated_output/ios"] stringByAppendingString:@".xcassets"] stringByAppendingPathComponent:@"AppIcon.appiconset"];
     
+    outputPathMacOS = [[[[filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"iml_generated_output/macOS"] stringByAppendingString:@".xcassets"] stringByAppendingPathComponent:@"AppIcon.appiconset"];
+    
     lbOutputPath.stringValue = [filePath stringByDeletingLastPathComponent];
 }
 
@@ -48,6 +50,26 @@
     
     NSError *error;
     NSFileManager *fm = [NSFileManager defaultManager];
+    
+    // macOS work
+    if (isMacOS.state == NSOnState) {
+        // delete old one
+        [fm removeItemAtPath:outputPathMacOS error:&error];
+        
+        // create new result dir for iOS
+        if([fm createDirectoryAtPath:outputPathMacOS withIntermediateDirectories:YES attributes:nil error:&error]){
+            // make macOS json file
+            [self makeContentJsonForMacOS:fm withIconSizeFile:@"macOSIconSize.plist" outputPath:outputPathMacOS];
+            
+            
+            //NSRunAlertPanel(@"Success", @"Your Icon set was generated at: %@", nil, nil, nil, outputPath);
+            [self showMessage:@"Success" forError:false];
+        } else {
+            //NSLog(@"Convert error: %@", error.description);
+            //NSRunAlertPanel(@"Error", @"%@", nil, nil, nil, @"Convert failed, please try again.");
+            [self showMessage:@"Failed" forError:true];
+        }
+    }
     
     // iOS work
     if (isIOS.state == NSOnState) {
@@ -124,6 +146,34 @@
     lbMessage.stringValue = msg;
     
     lbMessage.hidden = false;
+}
+
+- (void)makeContentJsonForMacOS:(NSFileManager *)fm withIconSizeFile:(NSString *)plistFileName outputPath:(NSString *)outPath {
+    NSError *error = nil;
+    NSString *originJsonPath = [[NSBundle mainBundle] pathForResource:@"macOS_Contents" ofType:@"json"];
+    [fm copyItemAtPath:originJsonPath toPath:[outPath stringByAppendingPathComponent:@"Contents.json"] error:&error];
+    NSData *originData = [NSData dataWithContentsOfFile:originJsonPath];
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:originData options:NSJSONReadingAllowFragments error:&error];
+    if ([jsonObject isKindOfClass:[NSDictionary class]] == NO) return;
+    NSDictionary *dict = (NSDictionary *)jsonObject;
+    // read config size list
+    NSString *scorePath = [[NSBundle mainBundle] pathForResource:plistFileName ofType:nil];
+    iconNamedSizes = [dict objectForKey:@"images"];
+    NSString *sizeA,*sizeB,*scale;
+    NSString *sizeStr = nil;
+    NSArray *sizeArray = nil;
+    NSString *named;
+    for (NSDictionary *item in iconNamedSizes) {
+        sizeStr = [item objectForKey:@"size"];
+        sizeArray = [sizeStr componentsSeparatedByString:@"x"];
+        sizeA = sizeArray.firstObject;
+        sizeB = sizeArray.lastObject;
+        named = [item objectForKey:@"filename"];
+        scale = [[item objectForKey:@"scale"] stringByReplacingOccurrencesOfString:@"x" withString:@""];
+        double sizeWidth = sizeA.doubleValue * scale.doubleValue;
+        double sizeHeight = sizeB.doubleValue * scale.doubleValue;
+        [LTUtilites writeImage:[LTUtilites resizeImageWithPath:inputPath toSize:CGSizeMake(sizeWidth,sizeHeight)] toPath:[outPath stringByAppendingPathComponent:named]];
+    }
 }
 
 @end

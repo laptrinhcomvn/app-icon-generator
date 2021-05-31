@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28CE9DEA266488E300A3F7B1 /* macOS_Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 28CE9DE9266488E300A3F7B1 /* macOS_Contents.json */; };
 		A6321E691B09994E003247B1 /* LTUtilites.m in Sources */ = {isa = PBXBuildFile; fileRef = A6321E681B09994E003247B1 /* LTUtilites.m */; };
 		A6321E6F1B09C1CD003247B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6321E6E1B09C1CD003247B1 /* CoreGraphics.framework */; };
 		A6321E711B09C1F5003247B1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6321E701B09C1F5003247B1 /* Quartz.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28CE9DE9266488E300A3F7B1 /* macOS_Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = macOS_Contents.json; sourceTree = "<group>"; };
 		A6321E671B09994E003247B1 /* LTUtilites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTUtilites.h; sourceTree = "<group>"; };
 		A6321E681B09994E003247B1 /* LTUtilites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTUtilites.m; sourceTree = "<group>"; };
 		A6321E6A1B099961003247B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,7 @@
 		A65A3FB21B09F5A10062D80C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				28CE9DE9266488E300A3F7B1 /* macOS_Contents.json */,
 				A68D6AD21BC50CEB000E35E0 /* AndroidIconSize.plist */,
 				A65A3FB31B09F5A10062D80C /* Contents.json */,
 				A65A3FB51B09F6DD0062D80C /* IconSize.plist */,
@@ -214,12 +217,12 @@
 		A65AFA261B05F07E008EDF83 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "© IML";
 				TargetAttributes = {
 					A65AFA2D1B05F07E008EDF83 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = LH225FX8ZS;
+						DevelopmentTeam = 2Z39MNNT8W;
 					};
 					A65AFA431B05F07E008EDF83 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -229,7 +232,7 @@
 			};
 			buildConfigurationList = A65AFA291B05F07E008EDF83 /* Build configuration list for PBXProject "Mobile Apps Icon Generator" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -254,6 +257,7 @@
 				A65AFA571B05FC3A008EDF83 /* droppanel.png in Resources */,
 				A65AFA3C1B05F07E008EDF83 /* Images.xcassets in Resources */,
 				A68D6AD31BC50CEB000E35E0 /* AndroidIconSize.plist in Resources */,
+				28CE9DEA266488E300A3F7B1 /* macOS_Contents.json in Resources */,
 				A65A3FB61B09F6DD0062D80C /* IconSize.plist in Resources */,
 				A65AFA3F1B05F07E008EDF83 /* Main.storyboard in Resources */,
 				A65A3FB41B09F5A10062D80C /* Contents.json in Resources */,
@@ -316,18 +320,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -362,18 +376,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -400,13 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = LH225FX8ZS;
+				DEVELOPMENT_TEAM = 2Z39MNNT8W;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "iOS Apps Icon Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.imodlife.apps.icongenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paopaosa.icongenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -415,13 +440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = LH225FX8ZS;
+				DEVELOPMENT_TEAM = 2Z39MNNT8W;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "iOS Apps Icon Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.imodlife.apps.icongenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paopaosa.icongenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
