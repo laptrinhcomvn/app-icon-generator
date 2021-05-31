@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment version="101000" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -168,11 +168,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="560" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="479"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2Y-jo-uUq">
-                                <rect key="frame" x="13" y="175" width="254" height="17"/>
+                                <rect key="frame" x="13" y="174" width="254" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="hGP-qc-Dv0"/>
                                 </constraints>
@@ -183,7 +183,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ijz-9U-r6e" customClass="IMLImageView_DragDrop">
-                                <rect key="frame" x="12" y="207" width="256" height="256"/>
+                                <rect key="frame" x="12" y="206" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="Nd9-TR-rW7"/>
                                     <constraint firstAttribute="width" constant="250" id="W5X-mu-zv3"/>
@@ -192,16 +192,16 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="droppanel" id="aSh-Fi-n6N"/>
                             </imageView>
                             <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-lN-KNB">
-                                <rect key="frame" x="282" y="20" width="4" height="440"/>
+                                <rect key="frame" x="282" y="20" width="4" height="439"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="Y1G-6z-mhZ"/>
                                 </constraints>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI2-dO-81V">
-                                <rect key="frame" x="298" y="72" width="251" height="388"/>
+                                <rect key="frame" x="298" y="72" width="251" height="387"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="sjs-du-oGy">
                                     <font key="font" metaFont="system"/>
-                                    <mutableString key="title">1- Drag your designed 1024x1024 (px) icon to the left.
+                                    <string key="title">1- Drag your designed 1024x1024 (px) icon to the left.
 2- Choose the target Mobile Platform
 3- Press Generate button
  Support:
@@ -213,13 +213,13 @@
 
 
 
-</mutableString>
+</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="Es1-g1-1dt">
-                                <rect key="frame" x="13" y="136" width="254" height="17"/>
+                                <rect key="frame" x="13" y="153" width="254" height="16"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="20s-sZ-jkp">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -227,19 +227,16 @@
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="36I-su-ero">
-                                <rect key="frame" x="13" y="70" width="254" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="TgI-PI-QfZ"/>
-                                </constraints>
+                                <rect key="frame" x="13" y="71" width="252" height="16"/>
                                 <buttonCell key="cell" type="check" title="For Android" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bYV-jL-MaH">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-cb-cO2">
-                                <rect key="frame" x="13" y="96" width="254" height="18"/>
+                                <rect key="frame" x="13" y="97" width="252" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="cOs-rl-2en"/>
+                                    <constraint firstAttribute="height" constant="14" id="mxR-bx-jEa"/>
                                 </constraints>
                                 <buttonCell key="cell" type="check" title="For iOS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2ja-aW-aal">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -267,42 +264,56 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="JsK-5r-dta">
+                                <rect key="frame" x="13" y="124" width="252" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="EIA-yX-NNu"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="For macOS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xxs-zN-ZBe">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="fsI-HJ-LEB" firstAttribute="top" secondItem="36I-su-ero" secondAttribute="bottom" constant="16" id="0pJ-1f-qsN"/>
-                            <constraint firstItem="36I-su-ero" firstAttribute="trailing" secondItem="fsI-HJ-LEB" secondAttribute="trailing" id="31i-99-mHz"/>
                             <constraint firstItem="8a1-lN-KNB" firstAttribute="top" secondItem="gI2-dO-81V" secondAttribute="top" id="522-qm-cRj"/>
                             <constraint firstAttribute="trailing" secondItem="gI2-dO-81V" secondAttribute="trailing" constant="13" id="5ZI-ii-xPM"/>
+                            <constraint firstItem="36I-su-ero" firstAttribute="trailing" secondItem="fsI-HJ-LEB" secondAttribute="trailing" id="649-pY-Hx4"/>
+                            <constraint firstItem="JsK-5r-dta" firstAttribute="leading" secondItem="Pbu-cb-cO2" secondAttribute="leading" id="7kl-h3-JaL"/>
+                            <constraint firstItem="36I-su-ero" firstAttribute="leading" secondItem="fsI-HJ-LEB" secondAttribute="leading" id="8HM-ih-VbT"/>
                             <constraint firstItem="ijz-9U-r6e" firstAttribute="trailing" secondItem="o2Y-jo-uUq" secondAttribute="trailing" id="8ic-cm-hrz"/>
-                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="leading" secondItem="Es1-g1-1dt" secondAttribute="leading" id="8ts-wO-gcH"/>
                             <constraint firstAttribute="bottom" secondItem="gI2-dO-81V" secondAttribute="bottom" constant="72" id="9wz-PB-ufo"/>
                             <constraint firstItem="o2Y-jo-uUq" firstAttribute="trailing" secondItem="Es1-g1-1dt" secondAttribute="trailing" id="FLN-QX-XmJ"/>
-                            <constraint firstItem="Es1-g1-1dt" firstAttribute="top" secondItem="o2Y-jo-uUq" secondAttribute="bottom" constant="22" id="FwR-L3-qRL"/>
+                            <constraint firstItem="Es1-g1-1dt" firstAttribute="top" secondItem="o2Y-jo-uUq" secondAttribute="bottom" constant="5" id="FwR-L3-qRL"/>
                             <constraint firstItem="gI2-dO-81V" firstAttribute="leading" secondItem="8a1-lN-KNB" secondAttribute="trailing" constant="16" id="Jay-QU-oPp"/>
                             <constraint firstItem="o2Y-jo-uUq" firstAttribute="leading" secondItem="ijz-9U-r6e" secondAttribute="leading" id="KOq-Uy-qSf"/>
-                            <constraint firstItem="36I-su-ero" firstAttribute="trailing" secondItem="Pbu-cb-cO2" secondAttribute="trailing" id="Kgm-y1-5hs"/>
                             <constraint firstItem="ijz-9U-r6e" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="Lze-zI-P38"/>
                             <constraint firstAttribute="bottom" secondItem="fsI-HJ-LEB" secondAttribute="bottom" constant="20" symbolic="YES" id="NZU-gG-yMr"/>
+                            <constraint firstItem="JsK-5r-dta" firstAttribute="top" secondItem="o2Y-jo-uUq" secondAttribute="bottom" constant="35" id="OaU-d2-kB0"/>
                             <constraint firstItem="l26-ow-SHC" firstAttribute="top" secondItem="gI2-dO-81V" secondAttribute="bottom" constant="16" id="PwF-1k-JaK"/>
+                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="trailing" secondItem="36I-su-ero" secondAttribute="trailing" id="WlZ-bI-sk5"/>
                             <constraint firstItem="fsI-HJ-LEB" firstAttribute="bottom" secondItem="8a1-lN-KNB" secondAttribute="bottom" id="ZYa-Cb-0OI"/>
-                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="leading" secondItem="36I-su-ero" secondAttribute="leading" id="aJK-SO-xnl"/>
                             <constraint firstItem="o2Y-jo-uUq" firstAttribute="top" secondItem="ijz-9U-r6e" secondAttribute="bottom" constant="18" id="aw9-DD-7ok"/>
-                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="trailing" secondItem="Es1-g1-1dt" secondAttribute="trailing" id="eFd-0v-znC"/>
-                            <constraint firstItem="36I-su-ero" firstAttribute="leading" secondItem="fsI-HJ-LEB" secondAttribute="leading" id="eLK-J8-FDG"/>
                             <constraint firstAttribute="bottom" secondItem="l26-ow-SHC" secondAttribute="bottom" constant="20" id="faQ-yP-YkY"/>
+                            <constraint firstItem="JsK-5r-dta" firstAttribute="trailing" secondItem="Es1-g1-1dt" secondAttribute="trailing" id="feq-lq-W34"/>
+                            <constraint firstItem="JsK-5r-dta" firstAttribute="trailing" secondItem="Pbu-cb-cO2" secondAttribute="trailing" id="fso-3T-LGd"/>
+                            <constraint firstItem="JsK-5r-dta" firstAttribute="leading" secondItem="Es1-g1-1dt" secondAttribute="leading" id="ic8-8c-Be6"/>
                             <constraint firstItem="ijz-9U-r6e" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="kMo-TM-aNQ"/>
-                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="top" secondItem="Es1-g1-1dt" secondAttribute="bottom" constant="24" id="mYc-dm-Qlw"/>
+                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="leading" secondItem="36I-su-ero" secondAttribute="leading" id="lWd-aO-f9m"/>
+                            <constraint firstItem="36I-su-ero" firstAttribute="baseline" secondItem="gI2-dO-81V" secondAttribute="baseline" id="mPV-01-6if"/>
                             <constraint firstItem="8a1-lN-KNB" firstAttribute="top" secondItem="ijz-9U-r6e" secondAttribute="top" id="oW1-Ze-87J"/>
                             <constraint firstItem="l26-ow-SHC" firstAttribute="leading" secondItem="8a1-lN-KNB" secondAttribute="trailing" constant="16" id="qxg-A3-NXF"/>
-                            <constraint firstItem="36I-su-ero" firstAttribute="top" secondItem="Pbu-cb-cO2" secondAttribute="bottom" constant="12" id="sTb-4t-5sl"/>
                             <constraint firstAttribute="trailing" secondItem="l26-ow-SHC" secondAttribute="trailing" constant="16" id="sg8-ka-VHh"/>
+                            <constraint firstItem="36I-su-ero" firstAttribute="top" secondItem="Pbu-cb-cO2" secondAttribute="bottom" constant="12" id="sxm-KK-OBP"/>
                             <constraint firstItem="Es1-g1-1dt" firstAttribute="leading" secondItem="o2Y-jo-uUq" secondAttribute="leading" id="yjh-2l-7xf"/>
                             <constraint firstItem="8a1-lN-KNB" firstAttribute="leading" secondItem="ijz-9U-r6e" secondAttribute="trailing" constant="19" id="zL2-F0-p0N"/>
+                            <constraint firstItem="Pbu-cb-cO2" firstAttribute="top" secondItem="JsK-5r-dta" secondAttribute="bottom" constant="13" id="zc4-4V-m3X"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="isAndroid" destination="36I-su-ero" id="ICn-WG-UB0"/>
                         <outlet property="isIOS" destination="Pbu-cb-cO2" id="Fz5-pc-dwN"/>
+                        <outlet property="isMacOS" destination="JsK-5r-dta" id="lRn-Dw-Mpt"/>
                         <outlet property="ivIcon" destination="ijz-9U-r6e" id="Zic-p6-Wus"/>
                         <outlet property="lbMessage" destination="l26-ow-SHC" id="mY0-pn-8nH"/>
                         <outlet property="lbOutputPath" destination="Es1-g1-1dt" id="PLO-Pp-APF"/>

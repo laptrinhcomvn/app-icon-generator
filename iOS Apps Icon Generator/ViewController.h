@@ -16,6 +16,8 @@
     
     NSString *outputPathAndroid;
     
+    NSString *outputPathMacOS;
+    
     NSDictionary *iconNamedSizes;
 }
 
@@ -23,6 +25,7 @@
 
 @property (weak) IBOutlet IMLImageView_DragDrop *ivIcon;
 
+@property (weak) IBOutlet NSButton *isMacOS;
 @property (weak) IBOutlet NSButton *isIOS;
 @property (weak) IBOutlet NSButton *isAndroid;
 
